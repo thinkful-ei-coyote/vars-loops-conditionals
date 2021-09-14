@@ -6,17 +6,17 @@ let arr = [
   { cartoon: "Rick and Morty" },
 ];
 
-//console.log(arr[1]);
+console.log(arr[1]);
 
+//Linear Search
 for (let item of arr) {
   if (item.cartoon === "Avatar") {
-   // console.log(item.cartoon);
+    console.log(item.cartoon);
   }
 }
 
 for (let i = 0; i < 2; i++) {
   let item = arr[i];
- // console.log(item.cartoon);
 }
 
 
@@ -35,7 +35,10 @@ let human={
     favoriteFoods: ['Jugular', 'Rare Steak', 'Peach Cobbler']
 };
 
+//Destructuring
 let {favoriteFoods, name,toes} = human;
+
+//Splice example
 let firstPart = favoriteFoods.slice(0, favoriteFoods.length-1);
 let lastPart = favoriteFoods[favoriteFoods.length-1];
 console.log(lastPart);
@@ -43,18 +46,11 @@ console.log(firstPart);
 let humanStr = `${name} the Human enjoys ${firstPart.join(', ')} and ${lastPart}`;
 console.log(humanStr);
 
- for (let i = 0; i < human.length; i++) {
-     const element = human[i];
-   //  console.log(element);
-     
- }
-//console.log(human.toes);
+
+console.log(human.toes);
 for (let key in human) {
-   // console.log(human);
-   // console.log(human[key]);
-         //const element = object[key];
-        
-   
+    console.log(key);
+    console.log(human[key]);
 }
 
 

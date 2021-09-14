@@ -27,7 +27,9 @@ function funcName(){
 fn();
 funcName();
 funcName='We want the funk';
-funcName();
-console.log(funcName);
+funcName(); //We get an error here because funcName is no longer a function and can't be executed
+console.log(funcName); //This logs 'We want the Func
+
+
 //console.log(globalVariable);
 //console.log(localVariable);
